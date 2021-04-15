@@ -67,7 +67,7 @@ and always can quit safe, with comand   *exit* or  pushin in the keyboard *crtl+
 
 <a href="https://imgur.com/JBPkP1K"><img src="https://i.imgur.com/JBPkP1K.png" title="source: imgur.com" /></a>
 
-####the non-interactive mode :
+#### The non-interactive mode:
 
 You can pass the argument with echo option i.e. echo "/bin/ls  -l /" | ./hsh 
 
