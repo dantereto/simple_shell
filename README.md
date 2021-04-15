@@ -36,7 +36,7 @@ Installed gcc (GNU Compiler Collection) version 4.8.4 or newer.
 ---
 
 ## How the Shell Works
-a brief flow:
+A brief flow:
 
 <a href="https://imgur.com/ibcpDsi"><img src="https://i.imgur.com/ibcpDsi.png" title="source: imgur.com" /></a>
 
