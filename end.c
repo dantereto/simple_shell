@@ -6,8 +6,8 @@
  */
 void sigintHandler(int sig_num)
 {
-  (void)sig_num;
-  signal(SIGINT, sigintHandler);
-  printf("\n$ ");
-  fflush(stdout);
+	(void)sig_num;
+	signal(SIGINT, sigintHandler);
+	printf("\n$ ");
+	fflush(stdout);
 }
