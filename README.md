@@ -33,6 +33,18 @@ Installed gcc (GNU Compiler Collection) version 4.8.4 or newer.
 
 ---
 
+---
+##How the Shell Works
+a brief flow:
+
+<a href="https://imgur.com/ibcpDsi"><img src="https://i.imgur.com/ibcpDsi.png" title="source: imgur.com" /></a>
+
+
+
+
+
+
+
 ## Example:hammer_and_wrench:
 ### Clone repo using HTTPS
 ```
@@ -44,17 +56,30 @@ You can compile the files using this command to check that there are no errors:
 ```
 $ gcc -Wall -pedantic -Werror Wextra *.c -o hsh
 ```
+### Firts Look
+
+
+
+
 
 ### Usage
-Enter the interactive mode after compilation:
-```bash
-$ ./hsh
- simple@shell $ /bin/ls
- README.md strfunction.c holberton.h main.c comexterno.c
- simple@shell $
- simple@shell $ exit
-$
+The command interpreter can be use in two ways 
+
+####the interactive mode :
+Execute normaly and it would be show to prompt, feel free to enter your comand.
 ```
+$ ./hsh
+```
+<a href="https://imgur.com/kQcYfIF"><img src="https://i.imgur.com/kQcYfIF.png" title="source: imgur.com" /></a>
+
+
+####the non-interactive mode :
+
+You can pass the argument with echo option i.e. echo "/bin/ls  -l /" | ./hsh 
+
+<a href="https://imgur.com/7IFtksE"><img src="https://i.imgur.com/7IFtksE.png" title="source: imgur.com" /></a>
+
+
 ---
 
 ## Contribution:heavy_check_mark:
