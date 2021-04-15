@@ -7,12 +7,12 @@
  */
 char *_strcpy(char *dest, char *src)
 {
-  int i;
+	int i;
 
-  for (i = 0; src[i] != '\0'; i++)
-    dest[i] = src[i];
-  dest[i] = '\0';
-  return (dest);
+	for (i = 0; src[i] != '\0'; i++)
+		dest[i] = src[i];
+	dest[i] = '\0';
+	return (dest);
 }
 /**
  * _strcmp - compares two strings
@@ -22,16 +22,16 @@ char *_strcpy(char *dest, char *src)
  */
 int _strcmp(char *s1, char *s2)
 {
-  int len;
+	int len;
 
-  for (len = 0; s1[len] || s2[len]; len++)
-    {
-      if (s1[len] < s2[len])
-	return (s1[len] - s2[len]);
-      else if (s1[len] > s2[len])
-	return (s1[len] - s2[len]);
-    }
-  return (0);
+	for (len = 0; s1[len] || s2[len]; len++)
+	{
+		if (s1[len] < s2[len])
+			return (s1[len] - s2[len]);
+		else if (s1[len] > s2[len])
+			return (s1[len] - s2[len]);
+	}
+	return (0);
 }
 /**
  * _strlen - checks the lenght of a string
@@ -40,13 +40,13 @@ int _strcmp(char *s1, char *s2)
  */
 int _strlen(char *s)
 {
-  int cont = 0;
+	int cont = 0;
 
-  while (s[cont] != '\0')
-    {
-      cont++;
-    }
-  return (cont);
+	while (s[cont] != '\0')
+	{
+		cont++;
+	}
+	return (cont);
 }
 /**
  * _memset -  fills memory with a constant byte.
@@ -57,11 +57,11 @@ int _strlen(char *s)
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-  unsigned int i;
+	unsigned int i;
 
-  for (i = 0; i < n; i++)
-    s[i] = b;
-  return (s);
+	for (i = 0; i < n; i++)
+		s[i] = b;
+	return (s);
 }
 
 /**
@@ -71,26 +71,26 @@ char *_memset(char *s, char b, unsigned int n)
  */
 char *_strdup(char *str)
 {
-  char *dup;
-  int i = 0;
-  int j = 0;
+	char *dup;
+	int i = 0;
+	int j = 0;
 
-  if (!str)
-    return (NULL);
+	if (!str)
+		return (NULL);
 
-  while (str[i] != '\0')
-    {
-      i++;
-    }
+	while (str[i] != '\0')
+	{
+		i++;
+	}
 
-  dup = malloc(sizeof(char) * (i + 1));
+	dup = malloc(sizeof(char) * (i + 1));
 
-  if (dup == NULL)
-    return (NULL);
+	if (dup == NULL)
+		return (NULL);
 
-  for (; j <= i; j++)
-    {
-      dup[j] = str[j];
-    }
-  return (dup);
+	for (; j <= i; j++)
+	{
+		dup[j] = str[j];
+	}
+	return (dup);
 }
