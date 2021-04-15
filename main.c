@@ -11,7 +11,6 @@ int main(int argc, char *argv[])
 	ssize_t characters = 0;
 	int continuar = 1;
 	char *buff = NULL, **main_tokens = '\0';
-	int salida = 0;
 	(void)argc;
 	signal(SIGINT, sigintHandler);
 	while (continuar)
@@ -40,7 +39,7 @@ int main(int argc, char *argv[])
 				if ((_strcmp(main_tokens[0], "env") == 0
 				   || _strcmp(main_tokens[0], "exit") == 0)
 				   && (main_tokens[1] == '\0'))
-					get_builtins(buff, main_tokens, salida);
+					get_builtins(buff, main_tokens);
 				else if	(comExterno(buff, main_tokens) == -1)
 					_perror(argv[0], main_tokens[0]);
 			}

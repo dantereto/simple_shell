@@ -6,7 +6,7 @@
  *@salida: codigo de salida
  *Return: return 0
  */
-int get_builtins(char *buffer,  char *main_tokens[], int salida)
+int get_builtins(char *buffer,  char *main_tokens[])
 {
 	int i = 0;
 
@@ -18,7 +18,7 @@ int get_builtins(char *buffer,  char *main_tokens[], int salida)
 	{
 		if (_strcmp(buffer, build[i].function) == 0)
 		{
-			return (build[i].f(buffer, main_tokens, salida));
+			return (build[i].f(buffer, main_tokens));
 		}
 	}
 	return (-1);

@@ -32,12 +32,12 @@ char *_strcat(char *dest, char *src);
 char **strtok2(char *str, char *delim);
 
 char *_getenv2(char *name);
-int _exito(char *buff, char *main_tokens[], int salida);
+int _exito(char *buff, char *main_tokens[]);
 int _cd(char *buff);
 int _env(void);
 
 int comExterno(char *buff, char *main_tokens[]);
-int get_builtins(char *buffer,  char *main_tokens[], int salida);
+int get_builtins(char *buffer,  char *main_tokens[]);
 int _execve(char *pathname, char *argv[], char *envp[]);
 
 char *_memset(char *s, char b, unsigned int n);

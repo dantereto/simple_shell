@@ -60,7 +60,7 @@ char *_getenv2(char *name)
  * @salida: codigo de salida
  * Return: always 0
  */
-int _exito(char *buffer, char  *main_tokens[], int salida)
+int _exito(char *buffer, char  *main_tokens[])
 {
 	int i;
 
@@ -72,6 +72,6 @@ int _exito(char *buffer, char  *main_tokens[], int salida)
 	}
 	if (buffer)
 		free(buffer);		   /*libera el buffer de getline */
-	exit(salida);
-	return (1);
+	exit(EXIT_SUCCESS);
+	return (0);
 }
