@@ -3,7 +3,6 @@
  * get_builtins - search the sign
  *@buffer: comando
  *@main_tokens: tokens del main
- *@salida: codigo de salida
  *Return: return 0
  */
 int get_builtins(char *buffer,  char *main_tokens[])
