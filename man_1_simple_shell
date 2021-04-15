@@ -1,0 +1,64 @@
+.\" Manpage.
+.\" To correct errors or typs.
+.TH man 3 "14 april 2021" "Holberton School 0x16.C - Simple_Shell"
+
+.SH NAME
+Simple_Shell - command interpreter
+
+.SH SYNOPSIS
+#include "holberton.h"
+
+.SH Sintaxis
+int main(int argc, char *argv[])
+
+.SH format
+This is the string that contains the text to be written to stdout.
+#include <stdarg.h>
+
+.SH DESCRIPTION
+shell is a computer program which exposes an operating
+system's services to a human user or other program.
+In general, operating system shells use either a command-line
+interface or graphical user interface, depending on a computer's role
+and particular operation.
+.SH Return Value
+_printf() function returns the number of characters printed (excluding the null byte used to end output to strings).
+
+.B exit
+Terminates the calling process immediately.
+
+.B ctrl + D
+Terminates the calling process immediately.
+
+.B ls
+Show the files actually.
+
+.B clear
+Clean screen and memory.
+
+.SH EXAMPLE
+
+.RS
+#include "holberton.h"
+
+int main(int argc, char *argv[])
+
+{
+if (isatty(STDIN_FILENO) != 0)
+write(STDOUT_FILENO, "$ ", 2);
+if (main_tokens)
+{
+free((void *)main_tokens[0]);
+free(main_tokens);
+}
+}
+.RE
+
+.SH SEE ALSO
+Shell(1)
+
+.SH BUGS
+No known bugs.
+
+.SH AUTHOR
+Alexander Forero, Daniel Escobar and Luis Mejia
