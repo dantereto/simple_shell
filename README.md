@@ -71,7 +71,7 @@ and always can quit safe, with comand   *exit* or  pushin in the keyboard *crtl+
 
 You can pass the argument with echo option i.e. echo "/bin/ls  -l /" | ./hsh 
 
-<a href="https://imgur.com/7IFtksE"><img src="https://i.imgur.com/7IFtksE.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/qVfiZLe"><img src="https://i.imgur.com/qVfiZLe.png" title="source: imgur.com" /></a>
 
 
 ---
