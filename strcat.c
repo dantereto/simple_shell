@@ -7,18 +7,17 @@
  */
 char *_strcat_extern(char *dest, char *src)
 {
-  int i = 0, j = 0; /* couters to arrays */
-
-  while (dest[i] != '\0')
-    i++;
-  dest[i] = '/';
-  i++;
-  for (; (dest[i] = src[j]) != '\0';)
-    {
-      i++;
-      j++;
-    }
-  return (dest);
+int i = 0, j = 0; /* couters to arrays */
+while (dest[i] != '\0')
+i++;
+dest[i] = '/';
+i++;
+for (; (dest[i] = src[j]) != '\0';)
+{
+i++;
+j++;
+}
+return (dest);
 }
 
 #include "holberton.h"
@@ -30,15 +29,13 @@ char *_strcat_extern(char *dest, char *src)
  */
 char *_strcat(char *dest, char *src)
 {
-  int i = 0, j = 0; /* couters to arrays */
-
-  while (dest[i] != '\0')
-    i++;
-
-  for (; (dest[i] = src[j]) != '\0';)
-    {
-      i++;
-      j++;
-    }
-  return (dest);
+int i = 0, j = 0; /* couters to arrays */
+while (dest[i] != '\0')
+i++;
+for (; (dest[i] = src[j]) != '\0';)
+{
+i++;
+j++;
+}
+return (dest);
 }
