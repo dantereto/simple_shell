@@ -56,7 +56,7 @@ $ gcc -Wall -pedantic -Werror Wextra *.c -o hsh
 ### Usage
 The command interpreter can be use in two ways. 
 
-####the interactive mode :
+#### The interactive mode :
 Execute normaly and it would be show to prompt, feel free to enter your comand.
 ```
 $ ./hsh
