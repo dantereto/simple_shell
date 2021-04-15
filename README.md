@@ -34,15 +34,11 @@ Installed gcc (GNU Compiler Collection) version 4.8.4 or newer.
 ---
 
 ---
+
 ##How the Shell Works
 a brief flow:
 
 <a href="https://imgur.com/ibcpDsi"><img src="https://i.imgur.com/ibcpDsi.png" title="source: imgur.com" /></a>
-
-
-
-
-
 
 
 ## Example:hammer_and_wrench:
@@ -56,14 +52,9 @@ You can compile the files using this command to check that there are no errors:
 ```
 $ gcc -Wall -pedantic -Werror Wextra *.c -o hsh
 ```
-### Firts Look
-
-
-
-
 
 ### Usage
-The command interpreter can be use in two ways 
+The command interpreter can be use in two ways. 
 
 ####the interactive mode :
 Execute normaly and it would be show to prompt, feel free to enter your comand.
@@ -72,6 +63,9 @@ $ ./hsh
 ```
 <a href="https://imgur.com/kQcYfIF"><img src="https://i.imgur.com/kQcYfIF.png" title="source: imgur.com" /></a>
 
+and always can quit safe, with comand   *exit* or  pushin in the keyboard *crtl+d.*
+
+<a href="https://imgur.com/JBPkP1K"><img src="https://i.imgur.com/JBPkP1K.png" title="source: imgur.com" /></a>
 
 ####the non-interactive mode :
 
