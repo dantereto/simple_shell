@@ -21,8 +21,9 @@ system's services to a human user or other program.
 In general, operating system shells use either a command-line
 interface or graphical user interface, depending on a computer's role
 and particular operation.
+
 .SH Return Value
-_printf() function returns the number of characters printed (excluding the null byte used to end output to strings).
+simple_shell() when it returns 0 the execution was done perfectly
 
 .B exit
 Terminates the calling process immediately.
@@ -30,35 +31,21 @@ Terminates the calling process immediately.
 .B ctrl + D
 Terminates the calling process immediately.
 
-.B ls
-Show the files actually.
+.B ctrl + C
+interrupts operation
 
-.B clear
-Clean screen and memory.
+.B env
+show the enviroment
 
-.SH EXAMPLE
-
-.RS
-#include "holberton.h"
-
-int main(int argc, char *argv[])
-
-{
-if (isatty(STDIN_FILENO) != 0)
-write(STDOUT_FILENO, "$ ", 2);
-if (main_tokens)
-{
-free((void *)main_tokens[0]);
-free(main_tokens);
-}
-}
 .RE
 
 .SH SEE ALSO
 Shell(1)
 
 .SH BUGS
-No known bugs.
+you can't handle pipes,
+semicolon is not handled,
+can't change current directory.
 
 .SH AUTHOR
 Alexander Forero, Daniel Escobar and Luis Mejia
